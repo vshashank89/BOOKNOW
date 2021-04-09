@@ -1,7 +1,7 @@
 {
-  "name": "trillo",
+  "name": "booknow",
   "version": "1.0.0",
-  "description": "trillo app",
+  "description": "booknow app",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -12,7 +12,7 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "author": "Jonas",
+  "author": "Shashank",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.6",
