@@ -1,0 +1,106 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow);
+
+    min-height: 50rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    font-size: 1.4rem; // this is because the search__input inherits font-size from header .
+
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+
+    display: flex;
+    justify-content: space-between; // to align them along main axis.
+    align-items: center; // to align them along cross axis. 
+
+    @media only screen and (max-width:$bp-smallest) {
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }
+}
+
+.content {
+    display: flex; 
+
+    @media  only screen and (max-width:$bp-medium) {
+        flex-direction: column;
+    }
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+
+    //Testing Purpose
+    //height: 80rem;
+    //background-color: orangered;
+
+
+    flex: 1; // similar to flex-grow: 1; i.e the element is allowed to occupy as much space as it can.
+}
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    //flex-wrap: wrap;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+
+    @media  only screen and (max-width:$bp-medium) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        flex-direction: column;
+    }
+}
+
+.description {
+    //font-size: 1.4rem;
+    background-color: #fff;
+    flex: 0 0 60%; // to set the width of flexitem using flex (flex-basis).
+    margin-right: 4.5rem;
+    //margin-bottom: 3.5rem;
+    padding: 3rem;
+    box-shadow: var(--shadow-light);
+
+    @media  only screen and (max-width:$bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.user-reviews {
+    //background-color: yellowgreen;
+    flex: 1 ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
